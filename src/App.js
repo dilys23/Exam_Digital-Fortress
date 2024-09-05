@@ -1,14 +1,18 @@
-import './App.css';
+
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './pages/Login'; // Đường dẫn đúng đến file Login của bạn
 import Dashboard from './pages/Dashboard';
-import Login from './pages/Login'
+
 function App() {
-  return (
-    <>
-     {/* <Login/> */}
-     <Dashboard/>
-    </>
-    
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

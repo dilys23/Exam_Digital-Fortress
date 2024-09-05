@@ -1,13 +1,15 @@
 import React from 'react';
 
-// import { Container } from './classNames';
-
+import avatar from '../images/avatar.jpg'
+import logo from '../images/logo.png'
 function Dashboard() {
+    
     return (
         <div className="w-full h-screen relative bg-[#131619] inline-flex overflow-x-hidden  ">
             <div className="w-full p-6 absolute top-0 left-0 bg-[#0d0f10] rounded-2xl border-b border-[#131619] flex justify-between items-center overflow-y-hidden">
                 <div className="h-12 p-3 bg-[#1a1d21] rounded-xl flex justify-start items-center gap-3">
                     <div className="w-6 h-6 pl-0.5 pr-[3px] pt-0.5 pb-[3px] flex justify-center items-center" />
+                  
                     <div className="text-[#6f767e] text-base font-normal  leading-normal">Search anything</div>
                 </div>
                 <div className="h-12 flex justify-end items-center gap-8">
@@ -20,7 +22,7 @@ function Dashboard() {
                             <div className="w-3 h-3 absolute left-[24px] top-[9px] bg-[#fd5a5a] rounded-full" />
                         </div>
                         <div className="bg-[#8571ff] rounded-[48px] flex justify-center items-center">
-                            <img className="w-[130px] h-[97.50px]" src="https://via.placeholder.com/130x97" alt="placeholder" />
+                            <img className="w-[130px] h-[97.50px]" src={avatar} alt="placeholder" />
                         </div>
                     </div>
                 </div>
@@ -28,8 +30,9 @@ function Dashboard() {
             <div className="w-[312px] h-[1000px] px-8 py-6 left-[12px] top-[12px] absolute bg-[#0d0f10] rounded-2xl flex-col justify-start items-center gap-[423px] inline-flex">
                 <div className="flex-col justify-start items-start gap-9 flex">
                     <div className="self-stretch justify-between items-center inline-flex">
-                        <div className="w-[120px] h-8 relative">
-                        </div>
+                        
+                        <img src={logo} alt="" />
+                        
                         <div className="w-8 h-8 p-2.5 bg-[#1a1d21] rounded-2xl shadow justify-center items-center flex">
                             <div className="grow shrink basis-0 self-stretch pl-0.5 pr-[3px] pb-[0.01px] justify-center items-center inline-flex" />
                         </div>
@@ -80,9 +83,9 @@ function Dashboard() {
                     </div>
                 </div>
             </div>
-            <div className="left-[336px] top-[132px] absolute flex-col justify-start items-start gap-4 inline-flex">
+            <div className="left-[336px]  top-[132px] absolute flex-col justify-start items-start gap-4 inline-flex w-full bg-[#0d0f10] flex">
                 <div className="text-center text-white text-[32px] font-semibold ">Dashboard</div>
-                <div className="h-[766px] bg-[#0d0f10] rounded-2xl border flex-col justify-start items-start flex">
+                <div className="h-[766px] bg-[#0d0f10] rounded-2xl border flex-col justify-between items-start flex w-full  bg-[#0d0f10] flex ">
                     <div className="self-stretch bg-[#0d0f10] justify-start items-start inline-flex">
                         <div className="w-[340px] flex-col justify-start items-start inline-flex">
                             <div className="self-stretch h-11 px-6 py-3 bg-[#0d0f10] justify-start items-center gap-3 inline-flex">
@@ -97,7 +100,7 @@ function Dashboard() {
                                 <div className="w-5 h-5 p-[5px] bg-[#b6f09c] rounded justify-center items-center flex">
                                     <div className="grow shrink basis-0 self-stretch px-[1.25px] py-[2.50px] justify-center items-center inline-flex" />
                                 </div>
-                                <img className="w-10 h-10 rounded-[200px]" src="https://via.placeholder.com/40x40" />
+                                <img className="w-10 h-10 rounded-[200px]" src={avatar}/>
                                 <div className="flex-col justify-start items-start inline-flex">
                                     <div className="text-white text-sm font-medium  leading-tight">Sisyphus</div>
                                     <div className="text-[#6f767e] text-sm font-normal font-['Inter'] leading-tight">sisyphus.com</div>
@@ -108,7 +111,7 @@ function Dashboard() {
                                 <div className="w-5 h-5 p-[5px] bg-[#b6f09c] rounded justify-center items-center flex">
                                     <div className="grow shrink basis-0 self-stretch px-[1.25px] py-[2.50px] justify-center items-center inline-flex" />
                                 </div>
-                                <img className="w-10 h-10 rounded-[200px]" src="https://via.placeholder.com/40x40" />
+                                <img className="w-10 h-10 rounded-[200px]" src={avatar} />
                                 <div className="flex-col justify-start items-start inline-flex">
                                     <div className="text-white text-sm font-medium  leading-tight">Sisyphus</div>
                                     <div className="text-[#6f767e] text-sm font-normal font-['Inter'] leading-tight">sisyphus.com</div>
@@ -119,7 +122,7 @@ function Dashboard() {
                                 <div className="w-5 h-5 p-[5px] bg-[#b6f09c] rounded justify-center items-center flex">
                                     <div className="grow shrink basis-0 self-stretch px-[1.25px] py-[2.50px] justify-center items-center inline-flex" />
                                 </div>
-                                <img className="w-10 h-10 rounded-[200px]" src="https://via.placeholder.com/40x40" />
+                                <img className="w-10 h-10 rounded-[200px]" src={avatar} />
                                 <div className="flex-col justify-start items-start inline-flex">
                                     <div className="text-white text-sm font-medium  leading-tight">Sisyphus</div>
                                     <div className="text-[#6f767e] text-sm font-normal font-['Inter'] leading-tight">sisyphus.com</div>
@@ -128,7 +131,7 @@ function Dashboard() {
                             <div className="self-stretch h-px bg-[#272727]" />
                             <div className="self-stretch h-[72px] px-6 py-4 justify-start items-center gap-3 inline-flex">
                                 <div className="w-5 h-5 relative bg-[#1a1d21] rounded border border-[#363a3d]" />
-                                <img className="w-10 h-10 rounded-[200px]" src="https://via.placeholder.com/40x40" />
+                                <img className="w-10 h-10 rounded-[200px]" src={avatar} />
                                 <div className="flex-col justify-start items-start inline-flex">
                                     <div className="text-white text-sm font-medium  leading-tight">Sisyphus</div>
                                     <div className="text-[#6f767e] text-sm font-normal font-['Inter'] leading-tight">sisyphus.com</div>
@@ -137,7 +140,7 @@ function Dashboard() {
                             <div className="self-stretch h-px bg-[#272727]" />
                             <div className="self-stretch h-[72px] px-6 py-4 justify-start items-center gap-3 inline-flex">
                                 <div className="w-5 h-5 relative bg-[#1a1d21] rounded border border-[#363a3d]" />
-                                <img className="w-10 h-10 rounded-[200px]" src="https://via.placeholder.com/40x40" />
+                                <img className="w-10 h-10 rounded-[200px]" src={avatar} />
                                 <div className="flex-col justify-start items-start inline-flex">
                                     <div className="text-white text-sm font-medium  leading-tight">Sisyphus</div>
                                     <div className="text-[#6f767e] text-sm font-normal font-['Inter'] leading-tight">sisyphus.com</div>
@@ -148,7 +151,7 @@ function Dashboard() {
                                 <div className="w-5 h-5 p-[5px] bg-[#b6f09c] rounded justify-center items-center flex">
                                     <div className="grow shrink basis-0 self-stretch px-[1.25px] py-[2.50px] justify-center items-center inline-flex" />
                                 </div>
-                                <img className="w-10 h-10 rounded-[200px]" src="https://via.placeholder.com/40x40" />
+                                <img className="w-10 h-10 rounded-[200px]" src={avatar} />
                                 <div className="flex-col justify-start items-start inline-flex">
                                     <div className="text-white text-sm font-medium  leading-tight">Sisyphus</div>
                                     <div className="text-[#6f767e] text-sm font-normal font-['Inter'] leading-tight">sisyphus.com</div>
@@ -159,7 +162,7 @@ function Dashboard() {
                                 <div className="w-5 h-5 p-[5px] bg-[#b6f09c] rounded justify-center items-center flex">
                                     <div className="grow shrink basis-0 self-stretch px-[1.25px] py-[2.50px] justify-center items-center inline-flex" />
                                 </div>
-                                <img className="w-10 h-10 rounded-[200px]" src="https://via.placeholder.com/40x40" />
+                                <img className="w-10 h-10 rounded-[200px]" src={avatar} />
                                 <div className="flex-col justify-start items-start inline-flex">
                                     <div className="text-white text-sm font-medium  leading-tight">Sisyphus</div>
                                     <div className="text-[#6f767e] text-sm font-normal font-['Inter'] leading-tight">sisyphus.com</div>
@@ -170,7 +173,7 @@ function Dashboard() {
                                 <div className="w-5 h-5 p-[5px] bg-[#b6f09c] rounded justify-center items-center flex">
                                     <div className="grow shrink basis-0 self-stretch px-[1.25px] py-[2.50px] justify-center items-center inline-flex" />
                                 </div>
-                                <img className="w-10 h-10 rounded-[200px]" src="https://via.placeholder.com/40x40" />
+                                <img className="w-10 h-10 rounded-[200px]" src={avatar} />
                                 <div className="flex-col justify-start items-start inline-flex">
                                     <div className="text-white text-sm font-medium  leading-tight">Sisyphus</div>
                                     <div className="text-[#6f767e] text-sm font-normal font-['Inter'] leading-tight">sisyphus.com</div>
@@ -181,7 +184,7 @@ function Dashboard() {
                                 <div className="w-5 h-5 p-[5px] bg-[#b6f09c] rounded justify-center items-center flex">
                                     <div className="grow shrink basis-0 self-stretch px-[1.25px] py-[2.50px] justify-center items-center inline-flex" />
                                 </div>
-                                <img className="w-10 h-10 rounded-[200px]" src="https://via.placeholder.com/40x40" />
+                                <img className="w-10 h-10 rounded-[200px]" src={avatar} />
                                 <div className="flex-col justify-start items-start inline-flex">
                                     <div className="text-white text-sm font-medium  leading-tight">Sisyphus</div>
                                     <div className="text-[#6f767e] text-sm font-normal font-['Inter'] leading-tight">sisyphus.com</div>
